@@ -1,22 +1,23 @@
-## COP4365-Stock (Project 1)
+## COP4365-Stock (Project 2)
 
-Stock Analysis project. Part 1.
-Goal: Load and display stock data in candlestick format.
-As discussed in class, you are to write a Windows Form Application to load and display the price of a stock in the candlestick format.
+Stock Analysis project. Part 2.
+Goal: Remove the DataGridView from your form (or better yet, make a new form)
 
-Input: For this part of the project, you will be storing the stock .csv files in a folder named “Stock Data” (make sure you have a space between the words ‘Stock’ and ‘Data’).
+Derive an improved candlestick class (to be called “smartCandlestick”)
 
-The “Stock Data” folder is to be located in the parent folder of your Solution folder. As explained in class, the naming of the files in the “Stock Data” folder is to be as follows: Given a ticker named “BDX”, the files associated with it should be named:
+Load and display stock data in candlestick format and allow for multiple stocks to be displayed on individual forms and identify and display some basic single-candlestick patterns.
 
-BDX-Day.csv for daily data
-BDX-Week.csv for weekly data
-BDX-Month.csv for monthly data
 
-The format of the CSV file will be as follows:
+As discussed in class, you the improved candlestick class will have some “higher level” properties such as range, bodyRange, topPrice, bottomPrice, topTail, bottomTail.
 
-  The first line will be the header with columns: Ticker,Period,Date,Open,High,Low,Close,Volume
-  Subsequent lines with contain the price information as stated in the header.
-  After having loaded the stock data, you are to display it in a DataGridView and in a Chart     control. Requirements and penalties for non-compliance.
+You can then use those higher level properties to add the isProperties discussed in class to ask if the smartCandlestick is:
+
+  isBullish, isBearish, isNeutal, is Marubozu, isDoji, isDragonFlyDoji, isGravestoneDoji, isHammer, isInvertedHammer and any other pattern you wish to recognize.
+
+You must provide the user with a way to select one of these pattern and then identify it on the chart.
+
+To that purpose, use the Annotation class, more specifically the RectangleAnnotation class (RectangleAnnotation Class (System.Windows.Forms.DataVisualization.Charting) | Microsoft LearnLinks to an external site.) or the ArrowAnnotation class (ArrowAnnotation Class (System.Windows.Forms.DataVisualization.Charting) | Microsoft LearnLinks to an external site.)
+
 1) The code must compile. Penalty: 100 points
 2) The code must run. Penalty: 100 points
 3) Your application must properly display the data. Penalty: 50 points
