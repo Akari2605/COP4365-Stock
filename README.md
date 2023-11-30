@@ -1,3 +1,5 @@
+Note: Each branch contains a separate part of one project. The final project is in branch Project 3. Since they are made separately and Visual Studio is very strict with file names, it is advised to make it separate file for each branch.
+
 ## COP4365-Stock (Project 1)
 
 Stock Analysis project. Part 1.
